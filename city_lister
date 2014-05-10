@@ -1,0 +1,30 @@
+# Coding101 project April 2014
+# Cody Climer
+# With this program you give it a list of Cities
+# The program will then arrange them alphabetically
+ 
+cityList = []
+ 
+# Input loop
+while True:
+  cityName = raw_input("Enter the name of a city (Otherwise just hit Enter): ")
+  if cityName == "":
+    break # Ends city name Entry
+  else:
+    cityList.append(cityName) # takes the entered name and adds it to the list
+# /Input loop
+ 
+# Manipulate Data  
+print "Now we'll organize the Cities you've entered."
+print # I like having some breathing room when reading CLI output
+ 
+cityList.sort() # Takes the entered cities and organizes them alphabetically
+# /Manipulate Data
+ 
+# Print Loop
+for cityName in (cityList):
+  print str(cityName) #This takes the now organized list of cities and prints one per line
+# /Print Loop
+ 
+print
+raw_input("Hit Enter to Exit")
