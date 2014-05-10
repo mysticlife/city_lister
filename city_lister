@@ -22,8 +22,8 @@ cityList.sort() # Takes the entered cities and organizes them alphabetically
 # /Manipulate Data
  
 # Print Loop
-for cityName in (cityList):
-  print str(cityName) #This takes the now organized list of cities and prints one per line
+for cityName in cityList:
+  print cityName #This takes the now organized list of cities and prints one per line
 # /Print Loop
  
 print
